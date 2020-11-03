@@ -5,29 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Posture Straight Tracker</title>
+    <meta name="description" content="Posture information tracking from Arduino device.">
+    <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/Asset%202.svg">
+    <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/Asset%202.svg">
+    <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/Asset%202.svg">
+    <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/Asset%202.svg">
+    <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/Asset%202.svg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body>
     <header></header>
-    <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container-fluid"><a class="navbar-brand" href="#">Posture Straight Tracker</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#Data">Data</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Graph">Graph</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Table">Table</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-light navbar-expand sticky-top bg-white">
+        <div class="container-fluid"><img class=".visible-xs-block, hidden-xs" src="assets/img/Asset%202.svg" width="30px" style="padding: 0px;margin: 0px;margin-right: 1rem;" alt="Posture Straight logo"><a class="navbar-brand d-none d-sm-block" href="index.html">Posture Straight Tracker</a>
+            <button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#Data">Data</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Graph">Graph</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Table">Table</a></li>
+                    </ul>
+                </div>
         </div>
     </nav>
     <div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 id="Data">Current Posture</h1>
+                    <h1 id="Data" class="anchor">Current Posture</h1>
                     <p>0.9°<br></p>
                 </div>
             </div>
@@ -43,13 +50,13 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <h1 id="Graph">Graph of posture angle over time</h1>
+                    <h1 id="Graph" class="anchor">Graph of posture angle over time</h1>
                     <div><canvas data-bs-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;9:00&quot;,&quot;9:05&quot;,&quot;9:10&quot;,&quot;9:15&quot;,&quot;9:20&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Posture Angle&quot;,&quot;backgroundColor&quot;:&quot;#4e73df&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;4.0&quot;,&quot;3.9&quot;,&quot;2.4&quot;,&quot;-1.2&quot;,&quot;0.8&quot;],&quot;fill&quot;:false}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:true,&quot;legend&quot;:{&quot;display&quot;:false,&quot;reverse&quot;:false},&quot;title&quot;:{&quot;display&quot;:false},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawTicks&quot;:true,&quot;drawOnChartArea&quot;:true},&quot;ticks&quot;:{&quot;beginAtZero&quot;:true}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawTicks&quot;:true,&quot;drawOnChartArea&quot;:true},&quot;ticks&quot;:{&quot;beginAtZero&quot;:true}}]}}}"></canvas></div>
                 </div>
             </div>
             <div class="row" style="border-width: 161px;">
                 <div class="col">
-                    <h1 id="Table">Table</h1>
+                    <h1 id="Table" class="anchor">Table</h1>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
