@@ -33,19 +33,36 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h1 id="Data" class="anchor">Current Posture</h1>
+                <div class="col-md-6">
+                    <h1 id="Data" class="anchor">Current Posture (Good)</h1>
                     <p>0.9°<br></p>
+                </div>
+                <div class="col-md-6">
+                    <h1>Average (30 min)<br></h1>
+                    <p>2.0°<br></p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <h1>Average (30 min)</h1>
-                    <p>2.0°<br></p>
-                </div>
-                <div class="col-md-6">
-                    <h1>Threshold</h1>
-                    <p>±7°<br></p>
+                <div class="col">
+                    <h1>Is your posture good?</h1>
+                    <div class="table-responsive table-hover">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>X &gt; 0.5</td>
+                                    <td>Bad posture</td>
+                                </tr>
+                                <tr>
+                                    <td>-0.5 ≤ X ≤ 0.5</td>
+                                    <td>Good posture</td>
+                                </tr>
+                                <tr>
+                                    <td>X &lt; -0.5</td>
+                                    <td>Bad posture</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="row">
