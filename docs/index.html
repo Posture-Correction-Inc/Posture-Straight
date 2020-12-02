@@ -114,6 +114,27 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script>
+        var fs = require('fs')
+        
+        fs.readFile('/home/pi/data', (err.data) => {
+            if(err) throw err;
+            console.log(data.toString());
+            
+        })
+    </script>
+    <script src="jquery.js"> </script>
+    <script>
+        getTxt = function (){
+            $ajax({
+                url: '/data/data/',
+                success: function (data){
+                    console.log(data);
+                }
+            });
+        }
+    </script>
+    
 </body>
 
 </html>
